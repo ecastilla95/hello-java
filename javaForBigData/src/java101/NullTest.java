@@ -1,10 +1,10 @@
-package javaForBigData;
+package java101;
 
-public class ChangeTest{
+public class NullTest{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ChangeTest test = new ChangeTest();
+		NullTest test = new NullTest();
 		Person p = new Person();
 		p.name = "Juan";
 		test.changeName(p, "Luis");
@@ -12,6 +12,6 @@ public class ChangeTest{
 	}
 
 	void changeName(Person pers, String other) {
-		pers.name = other;
+		pers = null;
 	}
 }

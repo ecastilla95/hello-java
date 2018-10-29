@@ -1,4 +1,4 @@
-package javaForBigData;
+package java101;
 
 public class Main{
 
