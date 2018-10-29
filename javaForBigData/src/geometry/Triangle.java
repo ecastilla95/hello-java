@@ -16,13 +16,13 @@ public class Triangle extends GeometricFigure{
 		return 3*side;
 	}
 	
-	public Triangle(String side, String height) {
+	public Triangle(String side) {
 		this.side = Float.parseFloat(side);
-		this.height = Float.parseFloat(height);
+		this.height = (float) (Math.sqrt(3)/4)*this.side;
 	}
 	
-	public Triangle(float side, float height) {
+	public Triangle(float side) {
 		this.side = side;
-		this.height = height;
+		this.height = (float) (Math.sqrt(3)/4)*this.side;
 	}
 }

@@ -1,23 +1,9 @@
 package geometry;
 
-public class Main extends GeometricFigure{
-	float radius;
-	
-	@Override
-	public double calculateArea(float radius) {
-		return MathUtils.PI*radius*radius;
-	}
-	
-	@Override
-	public double calculatePerimeter(float side) {
-		return 2*MathUtils.PI*radius;
-	}
-	
-	public Main(String radius) {
-		this.radius = Float.parseFloat(radius);
-	}
-	
-	public Main(float radius) {
-		this.radius = radius;
+public class Main{
+	public static void main(String[] args) {
+		Triangle t1 = new Triangle(1);
+		Triangle t2 = new Triangle(2);
+		Triangle t3 = new Triangle(3);
 	}
 }
