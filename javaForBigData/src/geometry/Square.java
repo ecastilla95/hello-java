@@ -1,6 +1,6 @@
 package geometry;
 
-public class Square extends GeometricFigure{
+public class Square implements GeometricFigure{
 	float side;
 	
 	@Override
@@ -20,4 +20,10 @@ public class Square extends GeometricFigure{
 	public Square(float side) {
 		this.side = side;
 	}
+
+	@Override
+	public String toString() {
+		return "Square [side=" + side + "]";
+	}
+	
 }

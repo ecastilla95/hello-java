@@ -2,7 +2,7 @@ package geometry;
 
 import java.lang.Math;
 
-public class Triangle extends GeometricFigure{
+public class Triangle implements GeometricFigure{
 	float side;
 	float height;
 	
@@ -25,4 +25,10 @@ public class Triangle extends GeometricFigure{
 		this.side = side;
 		this.height = (float) (Math.sqrt(3)/4)*this.side;
 	}
+
+	@Override
+	public String toString() {
+		return "Triangle [side=" + side + ", height=" + height + "]";
+	}
+	
 }

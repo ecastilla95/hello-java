@@ -1,6 +1,6 @@
 package geometry;
 
-public class Circle extends GeometricFigure{
+public class Circle implements GeometricFigure{
 	float radius;
 	
 	@Override
@@ -20,4 +20,10 @@ public class Circle extends GeometricFigure{
 	public Circle(float radius) {
 		this.radius = radius;
 	}
+
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + "]";
+	}
+	
 }
