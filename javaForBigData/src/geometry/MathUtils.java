@@ -2,7 +2,7 @@ package geometry;
 
 
 public class MathUtils {
-	public static float PI = 3.1416f;
+	public final static float PI = 3.1416f;
 	
 	public static float power(float x, int n) {
 		if (n == 0) return 1;
