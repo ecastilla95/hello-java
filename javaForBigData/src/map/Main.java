@@ -16,6 +16,14 @@ public class Main {
 			} catch (NullPointerException e) {
 				letters.put(c, 1);
 			}
+			
+			/*
+			 * Another way:
+			 * if(letters.containsKey(c){
+			 *  letters.put(c,++letters.get(c));
+			 * else{
+			 * 	letters.put(c,1);	
+			 * }*/
 		}
 		System.out.println(letters);
 
